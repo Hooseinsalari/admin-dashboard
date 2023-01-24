@@ -9,8 +9,11 @@ import { useMode } from "./theme";
 // components
 import Topbar from "./components/common/Topbar";
 import Sidebar from "./components/common/Sidebar";
+
+// pages
 import Dashboard from "./pages/dashboard";
 import Team from "./pages/team"
+import Contacts from "./pages/contacts";
 
 // mui
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -29,6 +32,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
             </Routes>
           </main>
         </div>
