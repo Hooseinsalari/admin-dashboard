@@ -1,3 +1,5 @@
+import { Route, Routes } from "react-router-dom";
+
 // context
 import { ColorModeContext } from "./theme";
 
@@ -5,7 +7,9 @@ import { ColorModeContext } from "./theme";
 import { useMode } from "./theme";
 
 // components
-import Topbar from "./pages/common/Topbar";
+import Topbar from "./components/common/Topbar";
+import Sidebar from "./components/common/Sidebar";
+import Dashboard from "./pages/dashboard";
 
 // mui
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -18,8 +22,12 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <Sidebar />
           <main className="content">
             <Topbar />
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+            </Routes>
           </main>
         </div>
       </ThemeProvider>

@@ -16,12 +16,12 @@ body,
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #e0e0e0;
+  background: #c4c4c4;
 }
 
 /* Handle */
@@ -29,7 +29,3 @@ body,
   background: #888;
 }
 
-/* Handle on Hover */
-::-webkit-scrollbar-track:hover {
-  background: #555;
-}
